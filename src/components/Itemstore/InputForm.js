@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import classes from "./InputForm.module.css";
+
 import CartContext from "../../Store/Cart-context";
 
 const InputForm = (props) => {
