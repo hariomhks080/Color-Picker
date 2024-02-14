@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-   
+    <Main>
     <CartProvider>
      
       
@@ -25,17 +25,17 @@ function App() {
       <Navbar shown={shownhandler}></Navbar>
       <hr></hr>
       {shown && <CartItem hide={hidehandler}></CartItem>}
-      <Main>
+      
       <Routes>
       <Route exact path='/Store' element={<InputItems></InputItems>}></Route>
      <Route exact path='/' element={<Home></Home>} ></Route>
      <Route exact path='/About' element={<About></About>} ></Route>
       
       </Routes>
-      </Main>
+     
       
     </CartProvider>
-    
+    </Main>
   );
 }
 
