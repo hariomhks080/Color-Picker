@@ -8,7 +8,7 @@ const Cart = (props) => {
         
         <button className={classes.button} onClick={props.shown}>Cart</button>
         
-    
+   
   )
 }
 

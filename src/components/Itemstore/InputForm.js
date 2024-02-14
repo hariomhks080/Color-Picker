@@ -18,7 +18,7 @@ const InputForm = (props) => {
 
   return (
     <form onSubmit={submithandler} style={{ marginTop: "20px",border:"2px solid blue",padding:"2rem"}}>
-      <img src={props.image} alt="hd" />
+      <img src={props.image} style={ {width:"90%"}} alt="hd" />
       <h2 style={{ textAlign: "center" }}>{props.title}</h2>
 
       <h6 style={{ textAlign: "center" }}>RS : {props.price}</h6>

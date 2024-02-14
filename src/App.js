@@ -32,10 +32,11 @@ function App() {
      <Route exact path='/About' element={<About></About>} ></Route>
       
       </Routes>
-     
+   
       
-    </CartProvider>
+      </CartProvider>
     </Main>
+    
   );
 }
 

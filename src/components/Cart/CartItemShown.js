@@ -10,8 +10,18 @@ const CartItemShown = (props) => {
     
   }
   return (
-    <div>
-    <hr></hr>
+    <tr>
+     
+      <td align="center">{props.title}</td>
+      
+      <td align="center"><img src={props.image} alt='hd' style={{  maxHeight: '5rem', width: '90%',  }} /></td>
+      <td align="center" >{props.quantity}</td>
+      <td align="center">Rs:{props.price}</td>
+     
+      <td align="center"  ><button onClick={submithandler}  style={{ color: "white", background: "brown",padding:"1rem",cursor:"pointer" }}>Remove</button></td> 
+          </tr>
+    // <div>
+    /* <hr></hr>
     <form style={{display:'flex',}} onSubmit={submithandler}>
     
       
@@ -25,7 +35,7 @@ const CartItemShown = (props) => {
     <button type='submit' style={{color:'red'}} >Remove</button>
     </form>
     <hr></hr>
-    </div>
+    </div> */
   )
 }
 
