@@ -12,14 +12,22 @@ const Navbar = (props) => {
      quantity=quantity+item.quantity
   ))
   return (
+   
+
+   
     <div className={classes.nav}>
         <li className={classes.li1}><Link  to='/' >Home</Link></li>
         <li className={classes.li2}><Link  to='/Store'>Store</Link></li>
-        <li className={classes.li3}><Link  to='/About'>About</Link></li>
-        <h4 style={{marginLeft:'50rem'}}>{quantity}</h4>
-        <Cart  shown={props.shown}></Cart>
+      <li className={classes.li3}><Link to='/About'>About</Link></li>
+      <div style={{ display: "flex" }}>
+        <Cart shown={props.shown}></Cart>
+        <h4 >{quantity}</h4>
+       
+      </div>
         
-    </div>
+        
+      </div>
+   
   )
 }
 
